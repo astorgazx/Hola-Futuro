@@ -1,0 +1,140 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../Fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "League Gothic";
+  src: url(../Fonts/LeagueGothic-Regular.otf);
+}
+@font-face {
+  font-family: Sifonn;
+  src: url(../Fonts/SIFONN_BASIC_OUTLINE.otf);
+}
+.navbar {
+  font-family: "League Gothic";
+  background: black;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+.navbar .navbar-brand:hover {
+  color: #f0f0f0;
+}
+.nav-item {
+  margin: 10px;
+}
+.nav-link:hover {
+  border-bottom: 3px solid var(--white);
+}
+.logo {
+  height: 75px;
+  width: 110px;
+  display: none;
+}
+.hide-logo {
+  height: 75px;
+  width: 110px;
+}
+.btn.btn-light.action-button {
+  color: #ffffff;
+  background: transparent;
+  border-radius: 22px;
+}
+.cuerpo-promociones {
+  background: #595959;
+  height: auto;
+  width: 100%;
+}
+.titulo-promo {
+  font-family: "League Gothic";
+  color: rgb(255, 255, 255);
+  margin: 30px;
+}
+.icons a:hover {
+  color: rgb(193, 191, 191);
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  margin: 17px;
+}
+.icons i {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin: 10px;
+}
+.vertical-line-icon {
+  display: table;
+  height: 100%;
+}
+.oferta {
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  margin: 5px 20px;
+}
+.promociones-pendientes {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .navbar .navbar-collapse {
+    border-color: transparent;
+    margin: 0;
+    margin-left: 350px;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .hide-logo {
+    display: none;
+  }
+  .logo {
+    display: inline;
+  }
+  .cuerpo-promociones {
+    height: 100vh;
+    width: 100%;
+  }
+  .promociones-pendientes {
+    display: flex;
+    flex-direction: row;
+  }
+  .vertical-line-icon::after,
+  .vertical-line-icon::before {
+    content: "";
+    display: table;
+    margin: 0 auto;
+    width: 1px;
+    height: 32%;
+    background-color: white;
+    margin: 30px;
+  }
+  .oferta {
+    width: 220px;
+    height: 220px;
+  } 
+  .icons {
+    width: 10%;
+    margin: 30px;
+  }
+  .icons i {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+  }
+  .titulo-promo {
+    margin: 40px;
+  }
+}
